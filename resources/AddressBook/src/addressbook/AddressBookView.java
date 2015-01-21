@@ -387,7 +387,6 @@ public class AddressBookView extends javax.swing.JFrame {
 
     private void deleteContactButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_deleteContactButtonActionPerformed
         presenter.removeCurrentContact();
-        contactList.getComponent(1).requestFocus();
     }//GEN-LAST:event_deleteContactButtonActionPerformed
 
     private void newContactMenuItemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_newContactMenuItemActionPerformed
