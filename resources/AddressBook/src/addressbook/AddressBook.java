@@ -6,6 +6,8 @@
 
 package addressbook;
 
+import se.chalmers.cse.dat215.lab1.Model;
+
 public class AddressBook {
 
     /**
@@ -25,5 +27,10 @@ public class AddressBook {
         }
         
         new AddressBookView().setVisible(true);
+        Runtime.getRuntime().addShutdownHook(new Thread(new Runnable(){
+            public void run(){
+                Model.getInstance().shutDown();
+            }
+        }));
     }
 }
